@@ -5,7 +5,19 @@
  * y el 20 de junio, o "falso" de lo contrario.
  *
  */
+ #include <stdio.h>
+ #include <stdlib.h>
 
-int main() {
-  
+ int main(int argc, char *argv[]) {
+   int dia = atoi(argv[1]);
+   int mes = atoi(argv[2]);
+   if(dia == 20 && mes == 3 || (dia == 20 && mes ==6)) {
+     printf("verdadero\n",dia,mes );
+   }
+     else{
+       printf("falso\n",dia,mes);
+     }
+
+   return 0;
+
 }
